@@ -51,6 +51,14 @@ ul {
   margin: 0 auto;
 
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
 /* -----------Logo---------------- */
 .logo {
 font-family: Raleway;
@@ -144,6 +152,16 @@ color: var(--first-color);
 /*-------------- Main section -------------*/
 .main-work {
   background-color: var(--background-first);
+
+}
+.main-container {
+  padding-top: 200px;
+  padding-left: 200px;
+  padding-bottom: 280px;
+  padding-right: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .main-title {
   font-weight: 900;
@@ -153,22 +171,26 @@ color: var(--first-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-color);
-  padding-top: 200px;
-  padding-left: 200px;
-  padding-bottom: 280px;
-  padding-right: 200px;
+  
+
 }
 .main-btn {
-  font-family: Roboto;
+    font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
    letter-spacing: 0.06em;
    border: none;
    border-radius: 4px;
+   width: 200;
+   height: 50;
   color: var(--first-color);
   background-color: var(--hover-color);
   cursor: pointer;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+
 }
 .main-btn:hover,.main-btn:focus {
     background-color: var(--hover-color);
@@ -179,12 +201,18 @@ color: var(--first-color);
 /* --------- Features section ---------- */
 .features {
   background-color: var(--first-color);
+  /* margin-top: 94px; */
   
 }
 .features-list {
   display: flex;
+  
+}
+.features-item {
+  max-width: 270px;
 }
 .features-item:not(:last-child) {
+  margin-right: 30px;
  
 }
 
@@ -196,19 +224,22 @@ color: var(--first-color);
   text-transform: uppercase;
   color: var(--second-color);
   margin-bottom: 10px;
+
 }
 .features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
-}
+  
+  }
 
 
 /* ----------- About ------------ */
 
 .about {
   background-color: var(--first-color);
+  /* margin-top: 94px; */
  
 }
 .about-list {
@@ -231,7 +262,8 @@ letter-spacing: 0.03em;
 /* --------------- Team ------------- */
 .team {
   background-color: var(--background-button);
-  margin-top: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .team-title {
   font-weight: 700;
@@ -245,6 +277,14 @@ letter-spacing: 0.03em;
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-personal {
@@ -268,7 +308,12 @@ letter-spacing: 0.03em;
 /* -------------- Footer -------------------  */
 .footer-main {
   background-color: var(--background-first);
-  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+.footer-list {
+  margin-top: 20px;
 }
 .footer-link {
   font-size: 14px;
@@ -310,7 +355,33 @@ letter-spacing: 0.03em;
 /* -----------------Filter------------------ */
 .filter {
   background-color: var(--first-color);
+  /* margin-top: 94px;
+  margin-bottom: 94px; */
 }
+.filter-list {
+  display: flex;
+ justify-content: center;
+
+
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px; 
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  margin-top: 34px;
+}
+.work-item {
+    flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+ 
+}
+
 .filter-btn {
   font-family: Roboto;
   font-weight: 500;
@@ -323,6 +394,10 @@ letter-spacing: 0.03em;
   color: var(--second-color);
   border: none;
   border-radius: 4px;
+  margin-right: 8px;
+}
+.filter-btn:last-child {
+  margin-right: 0;
 }
 .filter-btn:hover, .filter-btn:focus {
   font-family: Roboto;
@@ -335,7 +410,7 @@ letter-spacing: 0.03em;
   background-color: var(--hover-color);
   color: var(--first-color);
   border: none;
-  
+    
 }
 
 .work-title {
@@ -343,11 +418,13 @@ letter-spacing: 0.03em;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--second-color);
 }
 .work-text {
   font-size: 16px;
   line-height: 1.87;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-color);
 }
